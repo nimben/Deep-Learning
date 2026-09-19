@@ -1,11 +1,5 @@
 # AND Gate Perceptron
 
-A simple implementation of a **Perceptron** trained to learn the logic of an **AND gate**.
-
-This project was created as part of my journey into understanding the fundamentals of **Machine Learning and Neural Networks**, starting from a basic perceptron before moving towards more complex models.
-
----
-
 ## 🧠 What is a Perceptron?
 
 A perceptron is one of the simplest forms of an artificial neuron.

@@ -1,7 +1,5 @@
 # XOR Gate using Multi-Layer Perceptron
 
-> **From a single perceptron to a neural network that can learn non-linearly separable problems.**
-
 The **XOR (Exclusive OR)** gate is a classic example used to demonstrate the limitation of a single-layer perceptron.
 
 Unlike AND and OR gates, XOR **cannot be solved using a single perceptron** because its data points are not linearly separable.
@@ -232,51 +230,6 @@ This implementation uses:
 | Learning Rate   |                0.5 |
 | Training Epochs |             10,000 |
 | Optimizer       |   Gradient Descent |
-
----
-
-## 💻 Running the Program
-
-Make sure Python is installed, then run:
-
-```bash
-python xor_mlp.py
-```
-
-The program trains the network and finally tests all four XOR input combinations.
-
----
-
-## ✅ Expected Result
-
-The final predictions should approach:
-
-```text
-0 XOR 0 → 0
-0 XOR 1 → 1
-1 XOR 0 → 1
-1 XOR 1 → 0
-```
-
-Since sigmoid produces continuous values between `0` and `1`, the raw predictions may look approximately like:
-
-```text
-0 XOR 0 → 0.0...
-0 XOR 1 → 0.9...
-1 XOR 0 → 0.9...
-1 XOR 1 → 0.0...
-```
-
-The values depend on the initialization and training process.
-
-Using a threshold of `0.5`:
-
-```text
-prediction >= 0.5 → 1
-prediction <  0.5 → 0
-```
-
-we obtain the correct XOR truth table.
 
 ---
 
